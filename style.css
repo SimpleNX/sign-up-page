@@ -1,7 +1,55 @@
 html{
     height : 100%;
     width : 100%;
+    box-sizing: border-box;
 }
 body{
     margin : 0;
+}
+img[src="./images/leaf.jpg"]{
+    width : 35vw;
+    height : 100vh;
+}
+/* img[src="./images/odin-lined"]{
+    
+} */
+
+#container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bg-sec{
+    margin : 0 0 0 auto;
+    width : 35vw;
+    height : 100vh;
+}
+
+#container > div + div{
+    margin : 0 auto 0 0;
+    width : 65vw;
+    height : 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div[id="top-txt"], div[id="btn-sec"]{
+    background-color: lightgray;
+}
+
+#top-txt{
+    height : 35vh;
+}
+#form-sec{
+    height : 30vh;
+    padding : 2rem;
+}
+#form-sec{
+    height : 35vh;
+    display: flex;
+    flex-direction: column;
+}
+
+label, input{
+    display: block;
 }

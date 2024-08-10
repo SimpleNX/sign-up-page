@@ -4,22 +4,55 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
-        <title>Document</title>
+        <title>Sign-Up</title>
     </head>
     <body>
-        <div id="bg-sec">
-            <img src="./images/leaf.jpg" alt="leaf-bg">
-            <img src="./images/odin-lined" alt="odin-logo">
-        </div>
-        <div id="sign-form">
-            <div id="top-txt">
-
+        <div id="container">
+            <div id="bg-sec">
+                <img src="./images/leaf.jpg" alt="leaf-bg">
+                <!-- <img src="./images/odin-lined" alt="odin-logo"> -->
             </div>
-            <div id="form-sec">
-
-            </div>
-            <div id="btn-sec">
-
+            <div id="sign-form">
+                <div id="top-txt">
+                    This is not a real service! You know you need something like this in your life
+                    to help  you realise your deepest dreams.<br>Sign Up now to get started.
+                    You know you want to.
+                </div>
+                <div id="form-sec">
+                    <h3>Let's do this!</h3>
+                    <div class="form-c">
+                        <form id="sign-form">
+                            <div class="fields">
+                                <label for="first-name">First Name</label>
+                                <input id="first-name" type="text"name="first_name">
+                            </div>
+                            <div class="fields">
+                                <label for="last-name">Last Name</label>
+                                <input id="last-name" type="text" name="last_name">
+                            </div>
+                            <div class="fields">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email">
+                            </div>
+                            <div class="fields">
+                                <label for="number">Phone Number</label>
+                                <input type="tel" id="number" name="number">
+                            </div>
+                            <div class="fields">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="pass">
+                            </div>
+                            <div class="fields">
+                                <label for="confirmpass">Confirm Password</label>
+                                <input type="password" id="confirmpass" name="pass_confirm">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="btn-sec">
+                    <button id="create-btn">Create Account</button>
+                    <p>Already have an account? <a href="#" target="_blank">Log in</a> </p>
+                </div>
             </div>
         </div>
     </body>
