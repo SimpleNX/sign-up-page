@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <title>Sign-Up</title>
     </head>
     <body>
@@ -14,6 +17,7 @@
                     <img src="./images/odin-lined.png" alt="odin-logo">
                     <p id="logo-txt">ODIN</p>
                 </div>
+                <p id="cred">Photo by Haile West on Unsplash</p>
             </div>
             <div id="sign-form">
                 <div id="top-txt">
@@ -28,28 +32,28 @@
                     <div class="form-c">
                         <form id="sign-form">
                             <div class="fields">
-                                <label for="first-name">First Name</label>
-                                <input id="first-name" type="text"name="first_name">
+                                <label for="first-name">FIRST NAME</label>
+                                <input id="first-name" type="text" name="first_name" pattern="[a-zA-z]+">
                             </div>
                             <div class="fields">
-                                <label for="last-name">Last Name</label>
-                                <input id="last-name" type="text" name="last_name">
+                                <label for="last-name">LAST NAME</label>
+                                <input id="last-name" type="text" name="last_name" pattern="[a-zA-z]+">
                             </div>
                             <div class="fields">
-                                <label for="email">Email</label>
+                                <label for="email">EMAIL</label>
                                 <input id="email" type="email" name="email">
                             </div>
                             <div class="fields">
-                                <label for="number">Phone Number</label>
-                                <input type="tel" id="number" name="number">
+                                <label for="number">PHONE NUMBER</label>
+                                <input type="tel" id="number" name="number" maxlength="10" minlength="10" pattern="[0-9]+">
                             </div>
                             <div class="fields">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" name="pass">
+                                <label for="password">PASSWORD<span aria-label="required">*</span></label>
+                                <input type="password" id="password" name="pass" minlength="8">
                             </div>
                             <div class="fields">
-                                <label for="confirmpass">Confirm Password</label>
-                                <input type="password" id="confirmpass" name="pass_confirm">
+                                <label for="confirmpass">CONFIRM PASSWORD<span aria-label="required">*</span></label>
+                                <input type="password" id="confirmpass" name="pass_confirm" minlength="8">
                             </div>
                         </form>
                     </div>
