@@ -1,6 +1,8 @@
 html{
     height : 100%;
     width : 100%;
+}
+*{
     box-sizing: border-box;
 }
 body{
@@ -10,9 +12,26 @@ img[src="./images/leaf.jpg"]{
     width : 35vw;
     height : 100vh;
 }
-/* img[src="./images/odin-lined"]{
-    
-} */
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position : absolute;
+    bottom : 65vh;
+    background-color: rgb(0 0 0 / 0.4);
+    width : inherit;
+    height : 10rem;
+}
+
+img[src = "./images/odin-lined.png"]{
+    width : 7rem;
+}
+
+#logo-txt{
+    color : white;
+    font-size: 6rem;
+}
 
 #container{
     display: flex;
@@ -23,6 +42,8 @@ img[src="./images/leaf.jpg"]{
     margin : 0 0 0 auto;
     width : 35vw;
     height : 100vh;
+    position: relative;
+    text-align: center;
 }
 
 #container > div + div{
@@ -39,15 +60,32 @@ div[id="top-txt"], div[id="btn-sec"]{
 
 #top-txt{
     height : 35vh;
+    padding : 9vh 15vw 24px 30px;
 }
-#form-sec{
-    height : 30vh;
-    padding : 2rem;
+#top-p{
+    font-size: 2rem;
+    font-weight: bold;
 }
+
 #form-sec{
     height : 35vh;
     display: flex;
     flex-direction: column;
+}
+
+#btn-sec{
+    height : 30vh;
+    padding : 40px;
+    font-size: 20px;
+}
+
+#btn-sec button{
+    background-color: rgb(3, 111, 3);
+    padding : 12px 36px;
+    font-size: 20px;
+    border-radius : 10px;
+    border : none;
+    color : white;
 }
 
 label, input{
