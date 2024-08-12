@@ -10,7 +10,7 @@ html{
 *{
     box-sizing: border-box;
 }
-body, h3{
+body, h3, div{
     margin : 0;
     font-family: 'Roboto', 'Helvetica', sans-serif;
 }
@@ -62,7 +62,11 @@ img[src = "./images/odin-lined.png"]{
     position: absolute;
     top : 96vh;
     color : white;
-    left : 12vw;
+    left : 11vw;
+}
+
+#bg-sec a{
+    color : inherit;
 }
 
 #container > div + div{
@@ -87,7 +91,7 @@ div[id="top-txt"], div[id="btn-sec"]{
 }
 
 #form-sec{
-    height : 40vh;
+    height : 38vh;
     display: flex;
     flex-direction: column;
     padding : 0 1% 0 2%;
@@ -105,13 +109,14 @@ div[id="top-txt"], div[id="btn-sec"]{
     width : max(100px, 78%);
     flex-direction: column;
     align-items: flex-start;
-    margin : 1% 1% 1% 0;
-    flex : 0 1 20px;
+    margin : 1% 2% 2% 0;
+    flex : 0 1 100px;
+    flex-grow : 0;
 }
 
 .fields input{
-    width : 20vw;
-    height : min(30px, 4vh);
+    width : max(100px, 20vw);
+    height : min(30px, 7vh);
     background-color: #FFFFFF;
     border : 2px solid #E5E7EB;
     border-radius: 3px;
@@ -143,8 +148,8 @@ h3{
 }
 
 #btn-sec{
-    height : 25vh;
-    padding : 40px;
+    height : 27vh;
+    padding : 40px 40px 0 40px;
     font-size: 20px;
 }
 
